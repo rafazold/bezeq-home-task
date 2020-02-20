@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/earlyaccess/opensanshebrew.css");
+body {
+  font: normal 16px "Open Sans Hebrew", serif;
+}
+
+object {
+  pointer-events: none;
+  padding-bottom: 0;
+}
+
+.search-input-button:hover,
+.header-notification:hover,
+.header-menu-arrow:hover,
+.header-user:hover {
+  cursor: pointer;
+}
+
+.navbar-header {
+  background-color: #16254f !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-header .navbar-brand {
+  padding-bottom: 0;
+}
+.navbar-header .search-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 233px;
+  height: 34px;
+  border-radius: 17px;
+  border: solid 1px #979797;
+  background-color: var(--white);
+  direction: rtl;
+  justify-content: space-between;
+}
+.navbar-header .search-input-wrapper .search-input-field, .navbar-header .search-input-wrapper .search-input-button {
+  border: none;
+  outline: none;
+}
+.navbar-header .search-input-wrapper .search-input-field {
+  background-color: transparent;
+  height: 34px;
+  width: 130px;
+}
+.navbar-header .search-input-wrapper .search-input-field::placeholder {
+  color: #16254f;
+  font-size: 14px;
+}
+.navbar-header .search-input-wrapper .search-input-field:focus {
+  border: none;
+  outline: none;
+}
+.navbar-header .search-input-wrapper .search-input-icon {
+  height: 16px;
+  width: 16px;
+  border: none;
+  outline: none;
+}
+.navbar-header .header-menu-arrow {
+  margin-left: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.navbar-header .header-menu-arrow .header-menu-arrow-icon {
+  transform: rotate(270deg);
+  width: 16px;
+  height: auto;
+}
+.navbar-header .header-company-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: OpenSansHebrew;
+}
+
+.main {
+  margin-top: 6vh;
+}
+
+.header-logo {
+  margin-left: 0.2vw;
+}
+
+/*# sourceMappingURL=styles.css.map */
