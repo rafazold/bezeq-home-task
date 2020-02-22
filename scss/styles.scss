@@ -555,7 +555,12 @@ color: white;
                                         height: 16px;
                                     }
                                     .full-star {
-                                        background: url('../assets/main/star-2.svg')
+                                        background: url('../assets/main/star-2.svg');
+                                        &:hover {
+                                            display: none;
+                                            fill: red;
+                                            background-color: red;
+                                        }
                                     }
                                     .empty-star {
                                         background: url('../assets/main/star-1.svg')
@@ -586,23 +591,70 @@ color: white;
                 }
 
                 .page-details-footer {
-                    display: flex;
-                    justify-content: space-evenly;
 
-                    .details-footer-image {
-                        color: red;
+                    .page-details-footer-cards {
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 100%;
 
-                        &:hover {
-                            svg {
-                                fill: currentColor;
+                        .with-border {
+                            border-left: solid 1px #d8d8d8;
+                            .footer-text-top {
+                                font-size: 2em;
+                            }
+                        }
+
+                        .page-details-footer-card {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 25%;
+
+                            .details-footer-text {
+                                display: flex;
+                                flex-direction: column;
+                                text-align: right;
+                                font-size: 1.25em;
+                            }
+
+                            .footer-icon {
+                                -webkit-mask-repeat: no-repeat;
+                                mask-repeat: no-repeat;
+                                -webkit-mask-size: cover;
+                                mask-size: cover;
+                                display: inline-block;
+                                width: 3em;
+                                height: 3em;
+                                background: #16254f;
+                                &:hover {
+                                    background: #42a3ff;
+
+                                }
+                            }
+
+                            .icon-stats {
+                                -webkit-mask-image: url(../assets/sidebar/statistic.svg);
+                                mask-image: url(../assets/sidebar/statistic.svg);
+                            }
+                            .icon-activity {
+                                -webkit-mask-image: url(../assets/main/peulot.svg);
+                                mask-image: url(../assets/main/peulot.svg);
+                            }
+                            .icon-visits {
+                                -webkit-mask-image: url(../assets/main/visit-copy.svg);
+                                mask-image: url(../assets/main/visit-copy.svg);
+                            }
+                            .icon-impressions {
+                                -webkit-mask-image: url(../assets/main/hasifa-copy-2.svg);
+                                mask-image: url(../assets/main/hasifa-copy-2.svg);
                             }
                         }
 
                     }
+
                 }
             }
         }
     }
-
-
 }
+
