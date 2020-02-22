@@ -115,17 +115,51 @@
 
         }
         .page-details-content {
-            padding: 0 15px 0 15px;
+            padding: 0 8px;
             //margin: 30px auto;
             //display: grid;
-            display: none;
             grid-template-areas:
                     "bar"
                     "text"
                     "cards"
                     "button";
-            margin: auto 8px;
+            //margin: auto 8px;
             border-bottom: solid 1px #d8d8d8;
+
+            .page-details-content-progress-bar {
+                &::-webkit-progress-bar {
+                    width: 272px;
+                    height: 8px;
+                }
+            }
+
+            .page-details-content-progress-text {
+                font-size: 1.4em;
+                margin: 15px 0;
+            }
+
+            .page-details-content-button {
+                justify-self: center;
+                margin-bottom: 37px;
+            }
+
+            #products {
+                display: none;
+            }
+
+            .page-details-content-card-wrapper {
+                margin-bottom: 16px;
+
+                .page-details-content-card {
+                    width: 84px;
+                    height: 74px;
+                }
+
+                .page-details-content-doublecard {
+                    width: 182px;
+                    height: 74px;
+                }
+            }
         }
         .page-details-footer {
             .with-border {
@@ -255,10 +289,35 @@
         .page-details-content {
             padding: 0 25px 56px 25px;
             margin-top: 43px;
-            display: grid;
             grid-template-areas: "cards bar" "cards text" "cards button" "cards other";
             width: 1144px;
             border-bottom: solid 1px #d8d8d8;
+
+            .page-details-content-button {
+                justify-self: flex-end;
+            }
+
+            .page-details-content-progress-bar {
+                &::-webkit-progress-bar {
+                    width: 313px;
+                    height: 12px;
+                }
+            }
+
+            .page-details-content-cards {
+                width: 81%;
+                height: 204px;
+
+                .page-details-content-card {
+                    width: 104px;
+                    height: 90px;
+                }
+
+                .page-details-content-doublecard {
+                    width: 223px;
+                    height: 90px;
+                }
+            }
         }
         .page-details-footer {
             .with-border {
@@ -533,6 +592,8 @@ color: white;
 
                 .page-details-content {
 
+                    display: grid;
+
                     .page-details-content-progress-bar-wrapper {
                         grid-area: bar;
                         transform: rotate(180deg);
@@ -542,8 +603,6 @@ color: white;
                             -webkit-appearance: none;
 
                             &::-webkit-progress-bar {
-                                width: 313px;
-                                height: 12px;
                                 border-radius: 20px;
                                 border: solid 1px #d7d7d7;
                                 background-color: #f5f5f5;
@@ -553,8 +612,6 @@ color: white;
                                 border-radius: 20px;
                                 background-image: linear-gradient(to left, #1E90FF 0%, #1fcecb 100%);
                             }
-
-                            //appearance: none;
                         }
                     }
 
@@ -583,7 +640,6 @@ color: white;
                         display: inline-flex;
                         align-items: center;
                         justify-content: space-evenly;
-                        justify-self: flex-end;
                         margin-top: 39px;
 
                         .details-button-arrow {
@@ -601,15 +657,11 @@ color: white;
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: space-between;
-                        width: 81%;
-                        height: 204px;
 
                         .page-details-content-card-wrapper {
                             display: flex;
 
                             .page-details-content-card {
-                                width: 104px;
-                                height: 90px;
                                 border-radius: 5px;
                                 box-shadow: 0 6px 14px 0 #c3c2c2b3;
                                 border: solid 1px #d7d7d7;
@@ -620,8 +672,6 @@ color: white;
                             }
 
                             .page-details-content-doublecard {
-                                width: 223px;
-                                height: 90px;
                                 border-radius: 5px;
                                 box-shadow: 0 6px 14px 0 #c3c2c2b3;
                                 border: solid 1px #d7d7d7;

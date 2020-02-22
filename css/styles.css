@@ -94,11 +94,35 @@
     font-size: 1.8em;
   }
   .page-details .page-details-content {
-    padding: 0 15px 0 15px;
-    display: none;
+    padding: 0 8px;
     grid-template-areas: "bar" "text" "cards" "button";
-    margin: auto 8px;
     border-bottom: solid 1px #d8d8d8;
+  }
+  .page-details .page-details-content .page-details-content-progress-bar::-webkit-progress-bar {
+    width: 272px;
+    height: 8px;
+  }
+  .page-details .page-details-content .page-details-content-progress-text {
+    font-size: 1.4em;
+    margin: 15px 0;
+  }
+  .page-details .page-details-content .page-details-content-button {
+    justify-self: center;
+    margin-bottom: 37px;
+  }
+  .page-details .page-details-content #products {
+    display: none;
+  }
+  .page-details .page-details-content .page-details-content-card-wrapper {
+    margin-bottom: 16px;
+  }
+  .page-details .page-details-content .page-details-content-card-wrapper .page-details-content-card {
+    width: 84px;
+    height: 74px;
+  }
+  .page-details .page-details-content .page-details-content-card-wrapper .page-details-content-doublecard {
+    width: 182px;
+    height: 74px;
   }
   .page-details .page-details-footer .with-border .footer-text-top {
     font-size: 2.4em;
@@ -205,10 +229,28 @@
   .page-details .page-details-content {
     padding: 0 25px 56px 25px;
     margin-top: 43px;
-    display: grid;
     grid-template-areas: "cards bar" "cards text" "cards button" "cards other";
     width: 1144px;
     border-bottom: solid 1px #d8d8d8;
+  }
+  .page-details .page-details-content .page-details-content-button {
+    justify-self: flex-end;
+  }
+  .page-details .page-details-content .page-details-content-progress-bar::-webkit-progress-bar {
+    width: 313px;
+    height: 12px;
+  }
+  .page-details .page-details-content .page-details-content-cards {
+    width: 81%;
+    height: 204px;
+  }
+  .page-details .page-details-content .page-details-content-cards .page-details-content-card {
+    width: 104px;
+    height: 90px;
+  }
+  .page-details .page-details-content .page-details-content-cards .page-details-content-doublecard {
+    width: 223px;
+    height: 90px;
   }
   .page-details .page-details-footer .with-border {
     border-left: solid 1px #d8d8d8;
@@ -432,6 +474,9 @@ object {
   text-align: right;
   color: #16254f;
 }
+.main .page-top .page-top-information .page-details .page-details-content {
+  display: grid;
+}
 .main .page-top .page-top-information .page-details .page-details-content .page-details-content-progress-bar-wrapper {
   grid-area: bar;
   transform: rotate(180deg);
@@ -442,8 +487,6 @@ object {
   -webkit-appearance: none;
 }
 .main .page-top .page-top-information .page-details .page-details-content .page-details-content-progress-bar-wrapper .page-details-content-progress-bar::-webkit-progress-bar {
-  width: 313px;
-  height: 12px;
   border-radius: 20px;
   border: solid 1px #d7d7d7;
   background-color: #f5f5f5;
@@ -476,7 +519,6 @@ object {
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  justify-self: flex-end;
   margin-top: 39px;
 }
 .main .page-top .page-top-information .page-details .page-details-content .page-details-content-button .details-button-arrow {
@@ -492,15 +534,11 @@ object {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 81%;
-  height: 204px;
 }
 .main .page-top .page-top-information .page-details .page-details-content .page-details-content-cards .page-details-content-card-wrapper {
   display: flex;
 }
 .main .page-top .page-top-information .page-details .page-details-content .page-details-content-cards .page-details-content-card-wrapper .page-details-content-card {
-  width: 104px;
-  height: 90px;
   border-radius: 5px;
   box-shadow: 0 6px 14px 0 #c3c2c2b3;
   border: solid 1px #d7d7d7;
@@ -510,8 +548,6 @@ object {
   justify-content: center;
 }
 .main .page-top .page-top-information .page-details .page-details-content .page-details-content-cards .page-details-content-card-wrapper .page-details-content-doublecard {
-  width: 223px;
-  height: 90px;
   border-radius: 5px;
   box-shadow: 0 6px 14px 0 #c3c2c2b3;
   border: solid 1px #d7d7d7;
