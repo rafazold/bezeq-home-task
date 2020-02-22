@@ -1,4 +1,3 @@
-//@import url('https://fonts.googleapis.com/earlyaccess/opensanshebrew.css');
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
@@ -234,6 +233,12 @@
     .page-summary {
         height: 241px;
         width: 1144px;
+
+        .page-summary-icon {
+            width: 3.25em;
+            height: 3.25em;
+            background: #16254f;
+        }
 
         .summary-text-break {
             display: none;
@@ -530,6 +535,11 @@ color: white;
 
                     .page-summary-stat {
                         display: flex;
+                        &:hover {
+                            .page-summary-icon {
+                                background: #16254f;
+                            }
+                        }
 
                         .page-summary-stat-text {
                             p {
@@ -538,8 +548,7 @@ color: white;
 
                         }
                         .page-summary-icon {
-                            width: 52px;
-                            height: auto;
+                            background-image: linear-gradient(to right, #1E90FF 0%, #1fcecb 100%);
                             margin-left: 5px;
                         }
                     }
@@ -743,10 +752,12 @@ color: white;
 
                             &:hover {
                                 .footer-icon {
-                                    background: #42a3ff;
+                                    background-image: linear-gradient(to right, #1E90FF 0%, #1fcecb 100%);
                                 }
                                 .details-footer-text {
-                                    color: #42a3ff;
+                                    background: linear-gradient(to right, #1E90FF 0%, #1fcecb 100%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
                                 }
                             }
 
@@ -757,38 +768,46 @@ color: white;
                             }
 
                             .footer-icon {
-                                -webkit-mask-repeat: no-repeat;
-                                mask-repeat: no-repeat;
-                                -webkit-mask-size: cover;
-                                mask-size: cover;
-                                display: inline-block;
                                 width: 3.1em;
                                 height: 3.1em;
                                 background: #16254f;
                             }
 
-                            .icon-stats {
-                                -webkit-mask-image: url(../assets/sidebar/statistic.svg);
-                                mask-image: url(../assets/sidebar/statistic.svg);
-                            }
-                            .icon-activity {
-                                -webkit-mask-image: url(../assets/main/peulot.svg);
-                                mask-image: url(../assets/main/peulot.svg);
-                            }
-                            .icon-visits {
-                                -webkit-mask-image: url(../assets/main/visit-copy.svg);
-                                mask-image: url(../assets/main/visit-copy.svg);
-                            }
-                            .icon-impressions {
-                                -webkit-mask-image: url(../assets/main/hasifa-copy-2.svg);
-                                mask-image: url(../assets/main/hasifa-copy-2.svg);
-                            }
                         }
 
                     }
 
                 }
             }
+
+        .footer-icon, .page-summary-icon {
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            display: inline-block;
+        }
+            .icon-stats {
+                -webkit-mask-image: url(../assets/sidebar/statistic.svg);
+                mask-image: url(../assets/sidebar/statistic.svg);
+            }
+            .icon-activity {
+                -webkit-mask-image: url(../assets/main/peulot.svg);
+                mask-image: url(../assets/main/peulot.svg);
+            }
+            .icon-visits {
+                -webkit-mask-image: url(../assets/main/visit-copy.svg);
+                mask-image: url(../assets/main/visit-copy.svg);
+            }
+            .icon-impressions {
+            -webkit-mask-image: url(../assets/main/hasifa-copy-2.svg);
+            mask-image: url(../assets/main/hasifa-copy-2.svg);
+        }
+            .icon-click {
+                -webkit-mask-image: url(../assets/main/click-copy.svg);
+                mask-image: url(../assets/main/click-copy.svg);
+            }
+
         }
     }
 

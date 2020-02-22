@@ -185,6 +185,11 @@
     height: 241px;
     width: 1144px;
   }
+  .page-summary .page-summary-icon {
+    width: 3.25em;
+    height: 3.25em;
+    background: #16254f;
+  }
   .page-summary .summary-text-break {
     display: none;
   }
@@ -426,12 +431,14 @@ object {
 .main .page-top .page-top-information .page-summary .page-summary-stats .page-summary-stat {
   display: flex;
 }
+.main .page-top .page-top-information .page-summary .page-summary-stats .page-summary-stat:hover .page-summary-icon {
+  background: #16254f;
+}
 .main .page-top .page-top-information .page-summary .page-summary-stats .page-summary-stat .page-summary-stat-text p {
   margin-bottom: 0.15em;
 }
 .main .page-top .page-top-information .page-summary .page-summary-stats .page-summary-stat .page-summary-icon {
-  width: 52px;
-  height: auto;
+  background-image: linear-gradient(to right, #1E90FF 0%, #1fcecb 100%);
   margin-left: 5px;
 }
 .main .page-top .page-top-information .page-summary .page-summary-stats .page-summary-stat-middle {
@@ -606,10 +613,12 @@ object {
   justify-content: center;
 }
 .main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card:hover .footer-icon {
-  background: #42a3ff;
+  background-image: linear-gradient(to right, #1E90FF 0%, #1fcecb 100%);
 }
 .main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card:hover .details-footer-text {
-  color: #42a3ff;
+  background: linear-gradient(to right, #1E90FF 0%, #1fcecb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card .details-footer-text {
   display: flex;
@@ -617,30 +626,36 @@ object {
   text-align: right;
 }
 .main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card .footer-icon {
+  width: 3.1em;
+  height: 3.1em;
+  background: #16254f;
+}
+.main .page-top .footer-icon, .main .page-top .page-summary-icon {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: cover;
   mask-size: cover;
   display: inline-block;
-  width: 3.1em;
-  height: 3.1em;
-  background: #16254f;
 }
-.main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card .icon-stats {
+.main .page-top .icon-stats {
   -webkit-mask-image: url(../assets/sidebar/statistic.svg);
   mask-image: url(../assets/sidebar/statistic.svg);
 }
-.main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card .icon-activity {
+.main .page-top .icon-activity {
   -webkit-mask-image: url(../assets/main/peulot.svg);
   mask-image: url(../assets/main/peulot.svg);
 }
-.main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card .icon-visits {
+.main .page-top .icon-visits {
   -webkit-mask-image: url(../assets/main/visit-copy.svg);
   mask-image: url(../assets/main/visit-copy.svg);
 }
-.main .page-top .page-top-information .page-details-footer .page-details-footer-cards .page-details-footer-card .icon-impressions {
+.main .page-top .icon-impressions {
   -webkit-mask-image: url(../assets/main/hasifa-copy-2.svg);
   mask-image: url(../assets/main/hasifa-copy-2.svg);
+}
+.main .page-top .icon-click {
+  -webkit-mask-image: url(../assets/main/click-copy.svg);
+  mask-image: url(../assets/main/click-copy.svg);
 }
 
 /*# sourceMappingURL=styles.css.map */
