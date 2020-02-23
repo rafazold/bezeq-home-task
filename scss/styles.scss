@@ -54,7 +54,7 @@
                         padding: 0 22px;
                         flex-wrap: wrap;
                         flex-direction: column-reverse;
-                        margin-bottom: 4em;// TODO:size;
+                        margin-bottom: 4em;
 
                         .page-summary-icon {
                             width: 4em;
@@ -127,23 +127,26 @@
                         display: none;
                     }
 
-                    .page-details-content-card-wrapper {
-                        margin-bottom: 16px;
-                        font-size: 1.5em;
+                    .page-details-content-cards {
 
-                        .page-details-content-card {
-                            width: 84px;
-                            height: 74px;
+                        .page-details-content-card-wrapper {
+                            margin-bottom: 16px;
+                            font-size: 1.5em;
 
-                            .page-details-content-card-icon {
-                                width: 40px;
-                                height: 40px;
+                            .page-details-content-card {
+                                width: 84px;
+                                height: 74px;
+
+                                .page-details-content-card-icon {
+                                    width: 40px;
+                                    height: 40px;
+                                }
                             }
-                        }
 
-                        .page-details-content-doublecard {
-                            width: 182px;
-                            height: 74px;
+                            .page-details-content-doublecard {
+                                width: 182px;
+                                height: 74px;
+                            }
                         }
                     }
                 }
@@ -186,6 +189,7 @@
                 .page-bottom-advertising-cards {
                     flex-direction: column;
 
+
                     .page-bottom-advertising-card-wrapper {
                         border-radius: 5px;
                         box-shadow: 0 2px 4px 0 #c3c2c2b3;
@@ -205,11 +209,13 @@
                         }
 
                         .page-bottom-advertising-card {
-                                display: grid;
-                                grid-template-areas:
-                                        "other header"
-                                        "link text";
+                            margin-top: -14px;
+                            display: grid;
+                            grid-template-areas:
+                                    "other header"
+                                    "link text";
                             .page-bottom-advertising-card-header {
+                                margin-right: 44px;
                                 grid-area: header;
                                 font-size: 1.7em;
                                 font-weight: bold;
@@ -229,6 +235,7 @@
                             }
                             .page-bottom-advertising-card-link {
                                 grid-area: link;
+                                margin-left: 8px;
                                 width: 88px;
                                 height: 32px;
                                 border-radius: 20px;
@@ -262,6 +269,7 @@
         }
 
         .page-bottom-marketing {
+            padding: 8px;
             .page-bottom-marketing-header {
 
 
@@ -427,6 +435,11 @@
                         .page-details-content-card {
                             width: 104px;
                             height: 90px;
+
+                            .page-details-content-card-icon {
+                                height: 48px;
+                                width: 48px;
+                            }
                         }
 
                         .page-details-content-doublecard {
@@ -1052,7 +1065,7 @@ color: white;
     .page-bottom {
         background-color: white;
         text-align: right;
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
 
         .page-bottom-advertising-cards {
             display: flex;
@@ -1164,6 +1177,16 @@ color: white;
     .icon-arrow {
         -webkit-mask-image: url(../assets/main/arrow-copy-2.svg);
         mask-image: url(../assets/main/arrow-copy-2.svg);
+    }
+}
+
+.footer {
+    background-color: #16254f;
+    text-align: center;
+
+    .footer-logo {
+        width: 18px;
+        height: 18px;
     }
 }
 

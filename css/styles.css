@@ -95,19 +95,19 @@
   .main .page-top .page-details .page-details-content #products {
     display: none;
   }
-  .main .page-top .page-details .page-details-content .page-details-content-card-wrapper {
+  .main .page-top .page-details .page-details-content .page-details-content-cards .page-details-content-card-wrapper {
     margin-bottom: 16px;
     font-size: 1.5em;
   }
-  .main .page-top .page-details .page-details-content .page-details-content-card-wrapper .page-details-content-card {
+  .main .page-top .page-details .page-details-content .page-details-content-cards .page-details-content-card-wrapper .page-details-content-card {
     width: 84px;
     height: 74px;
   }
-  .main .page-top .page-details .page-details-content .page-details-content-card-wrapper .page-details-content-card .page-details-content-card-icon {
+  .main .page-top .page-details .page-details-content .page-details-content-cards .page-details-content-card-wrapper .page-details-content-card .page-details-content-card-icon {
     width: 40px;
     height: 40px;
   }
-  .main .page-top .page-details .page-details-content .page-details-content-card-wrapper .page-details-content-doublecard {
+  .main .page-top .page-details .page-details-content .page-details-content-cards .page-details-content-card-wrapper .page-details-content-doublecard {
     width: 182px;
     height: 74px;
   }
@@ -157,10 +157,12 @@
     height: 24px;
   }
   .main .page-bottom .page-bottom-advertising .page-bottom-advertising-cards .page-bottom-advertising-card-wrapper .page-bottom-advertising-card {
+    margin-top: -14px;
     display: grid;
     grid-template-areas: "other header" "link text";
   }
   .main .page-bottom .page-bottom-advertising .page-bottom-advertising-cards .page-bottom-advertising-card-wrapper .page-bottom-advertising-card .page-bottom-advertising-card-header {
+    margin-right: 44px;
     grid-area: header;
     font-size: 1.7em;
     font-weight: bold;
@@ -180,6 +182,7 @@
   }
   .main .page-bottom .page-bottom-advertising .page-bottom-advertising-cards .page-bottom-advertising-card-wrapper .page-bottom-advertising-card .page-bottom-advertising-card-link {
     grid-area: link;
+    margin-left: 8px;
     width: 88px;
     height: 32px;
     border-radius: 20px;
@@ -201,6 +204,9 @@
     font-size: 1.5em;
     line-height: 2.4;
     font-weight: bold;
+  }
+  .main .page-bottom-marketing {
+    padding: 8px;
   }
   .main .page-bottom-marketing .page-bottom-marketing-content {
     overflow-x: auto;
@@ -330,6 +336,10 @@
   .main .page-top .page-details .page-details-content .page-details-content-cards .page-details-content-card {
     width: 104px;
     height: 90px;
+  }
+  .main .page-top .page-details .page-details-content .page-details-content-cards .page-details-content-card .page-details-content-card-icon {
+    height: 48px;
+    width: 48px;
   }
   .main .page-top .page-details .page-details-content .page-details-content-cards .page-details-content-doublecard {
     width: 223px;
@@ -841,7 +851,7 @@ object {
 .main .page-bottom {
   background-color: white;
   text-align: right;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 .main .page-bottom .page-bottom-advertising-cards {
   display: flex;
@@ -936,6 +946,15 @@ object {
 .main .icon-arrow {
   -webkit-mask-image: url(../assets/main/arrow-copy-2.svg);
   mask-image: url(../assets/main/arrow-copy-2.svg);
+}
+
+.footer {
+  background-color: #16254f;
+  text-align: center;
+}
+.footer .footer-logo {
+  width: 18px;
+  height: 18px;
 }
 
 /*# sourceMappingURL=styles.css.map */
